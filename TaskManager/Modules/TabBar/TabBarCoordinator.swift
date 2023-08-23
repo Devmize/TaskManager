@@ -10,8 +10,7 @@ import UIKit
 final class TabBarCoordinator: TabBarCoordinatorProtocol {
     
     static let views: [CoordinatorProtocol] = [
-        TodoCoordinator(),
-        ChatCoordinator()
+        TodoCoordinator()
     ]
     
     static func configure() -> UITabBarController {

@@ -17,7 +17,7 @@ class SignUpView: UIView {
     
     private(set) lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Sixhands"
+        label.text = "Shell"
         label.font = .systemFont(ofSize: 46, weight: .bold)
         label.textColor = .black
         return label

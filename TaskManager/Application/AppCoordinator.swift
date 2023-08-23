@@ -14,6 +14,6 @@ final class AppCoordinator {
     }
     
     func mainViewController() -> UIViewController {
-        return TabBarCoordinator.configure()
+        return TodoCoordinator().configure()
     }
 }

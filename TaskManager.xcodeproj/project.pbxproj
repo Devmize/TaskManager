@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6213DC602A391F22007C7422 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 6213DC5F2A391F22007C7422 /* OpenAI */; };
 		6234501529F5D5DF0051D0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234501429F5D5DF0051D0E9 /* AppDelegate.swift */; };
 		6234501729F5D5DF0051D0E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234501629F5D5DF0051D0E9 /* SceneDelegate.swift */; };
 		6234501929F5D5DF0051D0E9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234501829F5D5DF0051D0E9 /* SignInViewController.swift */; };
@@ -39,10 +38,6 @@
 		6237ECAA2A0E93CD00B7B468 /* TodoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECA92A0E93CD00B7B468 /* TodoCoordinator.swift */; };
 		6237ECAC2A0E970B00B7B468 /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECAB2A0E970B00B7B468 /* SignInCoordinator.swift */; };
 		6237ECAE2A0EB2AB00B7B468 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECAD2A0EB2AB00B7B468 /* SignUpCoordinator.swift */; };
-		6237ECB12A0EF0A300B7B468 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECB02A0EF0A300B7B468 /* ChatViewController.swift */; };
-		6237ECB52A0EF0DC00B7B468 /* ChatProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECB42A0EF0DC00B7B468 /* ChatProtocols.swift */; };
-		6237ECB72A0EF0F100B7B468 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECB62A0EF0F100B7B468 /* ChatPresenter.swift */; };
-		6237ECB92A0EF10100B7B468 /* ChatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECB82A0EF10100B7B468 /* ChatCoordinator.swift */; };
 		6237ECBC2A0F9FEA00B7B468 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECBB2A0F9FEA00B7B468 /* ListenerService.swift */; };
 		6237ECBE2A0FA28100B7B468 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECBD2A0FA28100B7B468 /* Task.swift */; };
 		6237ECC12A0FC3C000B7B468 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECC02A0FC3C000B7B468 /* CreateTaskViewController.swift */; };
@@ -50,8 +45,7 @@
 		6237ECC52A0FC3E300B7B468 /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECC42A0FC3E300B7B468 /* CreateTaskView.swift */; };
 		6237ECC72A0FC3F600B7B468 /* CreateTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECC62A0FC3F600B7B468 /* CreateTaskPresenter.swift */; };
 		6237ECC92A0FC40200B7B468 /* CreateTaskCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECC82A0FC40200B7B468 /* CreateTaskCoordinator.swift */; };
-		6237ECCB2A1145CD00B7B468 /* ChatGPTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237ECCA2A1145CD00B7B468 /* ChatGPTService.swift */; };
-		62F5FC6C2A1F5108006970C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62F5FC6B2A1F5108006970C0 /* GoogleService-Info.plist */; };
+		626025542A967B1C0034289D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 626025532A967B1C0034289D /* GoogleService-Info.plist */; };
 		62F5FC6F2A1F6A7C006970C0 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F5FC6E2A1F6A7C006970C0 /* TaskViewController.swift */; };
 		62F5FC712A1F6ACC006970C0 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F5FC702A1F6ACC006970C0 /* TaskView.swift */; };
 		62F5FC732A1F6B2D006970C0 /* TaskProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F5FC722A1F6B2D006970C0 /* TaskProtocols.swift */; };
@@ -118,10 +112,6 @@
 		6237ECA92A0E93CD00B7B468 /* TodoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCoordinator.swift; sourceTree = "<group>"; };
 		6237ECAB2A0E970B00B7B468 /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
 		6237ECAD2A0EB2AB00B7B468 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
-		6237ECB02A0EF0A300B7B468 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		6237ECB42A0EF0DC00B7B468 /* ChatProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatProtocols.swift; sourceTree = "<group>"; };
-		6237ECB62A0EF0F100B7B468 /* ChatPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
-		6237ECB82A0EF10100B7B468 /* ChatCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCoordinator.swift; sourceTree = "<group>"; };
 		6237ECBB2A0F9FEA00B7B468 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
 		6237ECBD2A0FA28100B7B468 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		6237ECC02A0FC3C000B7B468 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
@@ -129,9 +119,8 @@
 		6237ECC42A0FC3E300B7B468 /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
 		6237ECC62A0FC3F600B7B468 /* CreateTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskPresenter.swift; sourceTree = "<group>"; };
 		6237ECC82A0FC40200B7B468 /* CreateTaskCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskCoordinator.swift; sourceTree = "<group>"; };
-		6237ECCA2A1145CD00B7B468 /* ChatGPTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTService.swift; sourceTree = "<group>"; };
 		6237ECCF2A11816B00B7B468 /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = usr/lib/swift/libswiftWebKit.tbd; sourceTree = SDKROOT; };
-		62F5FC6B2A1F5108006970C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		626025532A967B1C0034289D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		62F5FC6E2A1F6A7C006970C0 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		62F5FC702A1F6ACC006970C0 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		62F5FC722A1F6B2D006970C0 /* TaskProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskProtocols.swift; sourceTree = "<group>"; };
@@ -154,7 +143,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6213DC602A391F22007C7422 /* OpenAI in Frameworks */,
 				672A8C1A2AC9686EC425CB54 /* Pods_TaskManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,7 +211,7 @@
 		6234502929F5D68D0051D0E9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				62F5FC6B2A1F5108006970C0 /* GoogleService-Info.plist */,
+				626025532A967B1C0034289D /* GoogleService-Info.plist */,
 				6234501D29F5D5E90051D0E9 /* Assets.xcassets */,
 				6234502229F5D5E90051D0E9 /* Info.plist */,
 			);
@@ -235,7 +223,6 @@
 			children = (
 				6237EC7D2A0D062A00B7B468 /* Services */,
 				6237EC9A2A0E8CDC00B7B468 /* TabBar */,
-				6237ECAF2A0EEE2D00B7B468 /* ChatGPT */,
 				6237ECBF2A0FC38A00B7B468 /* CreateTask */,
 				62F5FC6D2A1F6A47006970C0 /* Task */,
 				6237EC932A0E8AC600B7B468 /* Todo */,
@@ -311,7 +298,6 @@
 				6237EC872A0D32A300B7B468 /* AuthService.swift */,
 				6237EC892A0D33E600B7B468 /* ValidationService.swift */,
 				6237ECBB2A0F9FEA00B7B468 /* ListenerService.swift */,
-				6237ECCA2A1145CD00B7B468 /* ChatGPTService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -344,17 +330,6 @@
 				6237ECA32A0E906800B7B468 /* TabBarProtocols.swift */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		6237ECAF2A0EEE2D00B7B468 /* ChatGPT */ = {
-			isa = PBXGroup;
-			children = (
-				6237ECB02A0EF0A300B7B468 /* ChatViewController.swift */,
-				6237ECB42A0EF0DC00B7B468 /* ChatProtocols.swift */,
-				6237ECB62A0EF0F100B7B468 /* ChatPresenter.swift */,
-				6237ECB82A0EF10100B7B468 /* ChatCoordinator.swift */,
-			);
-			path = ChatGPT;
 			sourceTree = "<group>";
 		};
 		6237ECBA2A0EF3AD00B7B468 /* Protocols */ = {
@@ -440,7 +415,6 @@
 			);
 			name = TaskManager;
 			packageProductDependencies = (
-				6213DC5F2A391F22007C7422 /* OpenAI */,
 			);
 			productName = TaskManager;
 			productReference = 6234501129F5D5DF0051D0E9 /* TaskManager.app */;
@@ -515,7 +489,6 @@
 			);
 			mainGroup = 6234500829F5D5DF0051D0E9;
 			packageReferences = (
-				6213DC5E2A391F22007C7422 /* XCRemoteSwiftPackageReference "OpenAI" */,
 			);
 			productRefGroup = 6234501229F5D5DF0051D0E9 /* Products */;
 			projectDirPath = "";
@@ -535,7 +508,7 @@
 			files = (
 				6234502129F5D5E90051D0E9 /* LaunchScreen.storyboard in Resources */,
 				6234501E29F5D5E90051D0E9 /* Assets.xcassets in Resources */,
-				62F5FC6C2A1F5108006970C0 /* GoogleService-Info.plist in Resources */,
+				626025542A967B1C0034289D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,7 +582,6 @@
 				6237ECC72A0FC3F600B7B468 /* CreateTaskPresenter.swift in Sources */,
 				6237ECC92A0FC40200B7B468 /* CreateTaskCoordinator.swift in Sources */,
 				6237ECA62A0E922000B7B468 /* AppCoordinator.swift in Sources */,
-				6237ECB92A0EF10100B7B468 /* ChatCoordinator.swift in Sources */,
 				6237ECAA2A0E93CD00B7B468 /* TodoCoordinator.swift in Sources */,
 				6234501529F5D5DF0051D0E9 /* AppDelegate.swift in Sources */,
 				6237EC862A0D31B100B7B468 /* UIView.swift in Sources */,
@@ -630,11 +602,8 @@
 				6237EC972A0E8C2300B7B468 /* TodoProtocols.swift in Sources */,
 				6237ECBC2A0F9FEA00B7B468 /* ListenerService.swift in Sources */,
 				6237ECC32A0FC3D100B7B468 /* CreateTaskProtocols.swift in Sources */,
-				6237ECCB2A1145CD00B7B468 /* ChatGPTService.swift in Sources */,
-				6237ECB72A0EF0F100B7B468 /* ChatPresenter.swift in Sources */,
 				6237EC9E2A0E8EC800B7B468 /* TabBarController.swift in Sources */,
 				62F5FC772A1F6B47006970C0 /* TaskCoordinator.swift in Sources */,
-				6237ECB52A0EF0DC00B7B468 /* ChatProtocols.swift in Sources */,
 				62F5FC6F2A1F6A7C006970C0 /* TaskViewController.swift in Sources */,
 				6237ECAC2A0E970B00B7B468 /* SignInCoordinator.swift in Sources */,
 				6237EC952A0E8B2300B7B468 /* TodoViewController.swift in Sources */,
@@ -646,7 +615,6 @@
 				6237ECA82A0E935700B7B468 /* CoordinatorProtocols.swift in Sources */,
 				6234503529F6D5C00051D0E9 /* SignInPresenter.swift in Sources */,
 				6237EC902A0D34F500B7B468 /* SignUpPresenter.swift in Sources */,
-				6237ECB12A0EF0A300B7B468 /* ChatViewController.swift in Sources */,
 				6234503729F6D7340051D0E9 /* SignInProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -994,25 +962,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6213DC5E2A391F22007C7422 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MacPaw/OpenAI";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6213DC5F2A391F22007C7422 /* OpenAI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6213DC5E2A391F22007C7422 /* XCRemoteSwiftPackageReference "OpenAI" */;
-			productName = OpenAI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6234500929F5D5DF0051D0E9 /* Project object */;
 }

@@ -9,33 +9,30 @@ import UIKit
 
 final class CreateTaskViewController: UIViewController, CreateTaskViewProtocol {
     
-    private lazy var taskView = CreateTaskView()
-    
     var presenter: CreateTaskPresenterProtocol?
+    
+    override func loadView() {
+        self.view = CreateTaskView()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setView()
         self.addTargets()
     }
     
-    private func setView() {
-        self.view.addSubview(self.taskView)
-        
-        self.taskView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
+    func view() -> CreateTaskView {
+        return self.view as! CreateTaskView
     }
     
     private func addTargets() {
-        self.taskView.addTapGestureToHideKeyboard()
-        self.taskView.createButton.addTarget(self, action: #selector(clickCreateButton), for: .touchUpInside)
+        self.view().addTapGestureToHideKeyboard()
+        self.view().createButton.addTarget(self, action: #selector(clickCreateButton), for: .touchUpInside)
     }
     
     @objc func clickCreateButton() {
-        guard let title = self.taskView.titleTextField.text,
-              let content = self.taskView.contentTextView.text,
+        guard let title = self.view().titleTextField.text,
+              let content = self.view().contentTextView.text,
               !title.isEmpty else { return }
         
         self.presenter?.createTask(title: title, content: content)

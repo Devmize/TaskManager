@@ -10,34 +10,31 @@ import SnapKit
 
 final class SignInViewController: UIViewController, SignInViewProtocol {
     
-    private(set) lazy var signInView = SignInView()
-    
     var presenter: SignInPresenterProtocol?
+    
+    override func loadView() {
+        self.view = SignInView()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setView()
         self.addTargets()
     }
     
-    private func setView() {
-        self.view.addSubview(self.signInView)
-        
-        self.signInView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
+    func view() -> SignInView {
+        return self.view as! SignInView
     }
 
     private func addTargets() {
-        self.signInView.addTapGestureToHideKeyboard()
-        self.signInView.signInButton.addTarget(self, action: #selector(clickSignInButton), for: .touchUpInside)
-        self.signInView.signUpButton.addTarget(self, action: #selector(clickSignUpButton), for: .touchUpInside)
+        self.view().addTapGestureToHideKeyboard()
+        self.view().signInButton.addTarget(self, action: #selector(clickSignInButton), for: .touchUpInside)
+        self.view().signUpButton.addTarget(self, action: #selector(clickSignUpButton), for: .touchUpInside)
     }
     
     @objc func clickSignInButton() {
-        guard let email = self.signInView.emailTextField.text,
-              let password = self.signInView.passwordTextField.text, !email.isEmpty, !password.isEmpty else { return }
+        guard let email = self.view().emailTextField.text,
+              let password = self.view().passwordTextField.text, !email.isEmpty, !password.isEmpty else { return }
         
         self.presenter?.signIn(email: email, password: password)
     }
