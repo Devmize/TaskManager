@@ -30,7 +30,7 @@ final class SignInCoordinator: SignInCoordinatorProtocol, CoordinatorProtocol {
         guard let vc = view as? UIViewController else { return }
 
         nextView.modalPresentationStyle = .fullScreen
-        vc.present(nextView, animated: true)
+        vc.navigationController?.pushViewController(nextView, animated: true)
     }
     
     func openMainViewController(from view: SignInViewProtocol?) {

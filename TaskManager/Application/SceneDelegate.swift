@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let _ = Auth.auth().currentUser {
             rootViewController = self.appCoordinator.mainViewController()
         }
-        var rootNavigationController = UINavigationController(rootViewController: rootViewController)
+        let rootNavigationController = UINavigationController(rootViewController: rootViewController)
         self.window?.rootViewController = rootNavigationController
         self.window?.makeKeyAndVisible()
     }

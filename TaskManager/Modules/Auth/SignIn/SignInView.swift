@@ -15,6 +15,12 @@ final class SignInView: UIView {
         return view
     }()
     
+    private(set) lazy var scrollView: UIScrollView = {
+        let scroll = UIScrollView()
+        scroll.showsVerticalScrollIndicator = false
+        return scroll
+    }()
+    
     private(set) lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Shell"
@@ -85,7 +91,8 @@ final class SignInView: UIView {
     }
     
     private func addSubviews() {
-        self.addSubview(self.backView)
+        self.addSubview(self.scrollView)
+        self.scrollView.addSubview(self.backView)
         
         self.backView.addSubview(self.titleLabel)
         self.backView.addSubview(self.emailTextField)
@@ -97,8 +104,12 @@ final class SignInView: UIView {
     }
     
     private func setConstraints() {
+        self.scrollView.snp.makeConstraints { make in
+            make.center.top.bottom.leading.trailing.equalToSuperview()
+        }
         self.backView.snp.makeConstraints { make in
-            make.top.bottom.leading.trailing.equalToSuperview()
+            make.top.bottom.equalToSuperview()
+            make.width.height.equalToSuperview()
         }
         self.titleLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
